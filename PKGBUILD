@@ -1,12 +1,12 @@
 # This is for local testing and only works if used in the root of the cloned repo (with makepkg)
 # Maintainer : Ramon Buldo <ramon@manjaro.org>
 
-pkgname=kcm-msm
+pkgname=kcm-nsm
 pkgver=0.4.95
 pkgrel=1
-pkgdesc="Manjaro settings manager module for Plasma 5"
+pkgdesc="Namib settings manager module"
 arch=('i686' 'x86_64')
-url="https://github.com/manjaro/manjaro-settings-manager"
+url="https://github.com/meerkatbrowser/namib-settings-manager"
 license=("GPL")
 depends=('icu' 'qt5-base' 'hwinfo' 'kitemmodels' 'kauth' 
          'kconfigwidgets' 'kcoreaddons' 'kcmutils' 'ckbcomp'
