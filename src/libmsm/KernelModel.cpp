@@ -51,9 +51,9 @@ KernelModel::update()
     QStringList recommendedKernels = getRecommendedKernels();
 
     QSet<QString> modulesToInstall;
-    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^linux|linux-lts|linux-zen|linux-hardened)-" ) ) )
+    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^(linux|linux-lts|linux-zen|linux-hardened)-" ) ) )
     {
-        QString aux = QString( module ).remove( QRegularExpression( "^linux|linux-lts|linux-zen|linux-hardened)-" ) );
+        QString aux = QString( module ).remove( QRegularExpression( "^(linux|linux-lts|linux-zen|linux-hardened)-" ) );
         modulesToInstall.insert( aux );
     }
 
