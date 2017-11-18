@@ -51,15 +51,15 @@ KernelModel::update()
     QStringList recommendedKernels = getRecommendedKernels();
 
     QSet<QString> modulesToInstall;
-    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^linux|-lts|-zen|-hardened)-" ) ) )
+    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^linux|linux-lts|linux-zen|linux-hardened)-" ) ) )
     {
-        QString aux = QString( module ).remove( QRegularExpression( "^linux|-lts|-zen|-hardened)-" ) );
+        QString aux = QString( module ).remove( QRegularExpression( "^linux|linux-lts|linux-zen|linux-hardened)-" ) );
         modulesToInstall.insert( aux );
     }
 
     beginResetModel();
     m_kernels.clear();
-    foreach ( const QString& kernel, QStringList( allKernelPackages.keys() ).filter( QRegularExpression( "^linux|-lts|-zen|-hardened)$" ) ) )
+    foreach ( const QString& kernel, QStringList( allKernelPackages.keys() ).filter( QRegularExpression( "^(linux|linux-lts|linux-zen|linux-hardened)$" ) ) )
     {
         Kernel newKernel;
 
@@ -211,7 +211,7 @@ KernelModel::getAvailablePackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Ss" << "^linux|-lts|-zen|-hardened)" );
+    process.start( "pacman", QStringList() << "-Ss" << "^(linux|linux-lts|linux-zen|linux-hardened)$" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAllStandardOutput();
@@ -239,7 +239,7 @@ KernelModel::getInstalledPackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Qs" << "^linux|-lts|-zen|-hardened)" );
+    process.start( "pacman", QStringList() << "-Qs" << "^(linux|linux-lts|linux-zen|linux-hardened)$" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAll();
