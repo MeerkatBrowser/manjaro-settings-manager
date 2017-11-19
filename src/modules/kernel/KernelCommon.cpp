@@ -85,7 +85,7 @@ KernelCommon::installKernel( const QModelIndex& index )
     }
 
     QStringList arguments;
-    arguments << "--noconfirm" << "--noprogressbar" << "-S" << packageList << packageList + "-headers";
+    arguments << "--noconfirm" << "--noprogressbar" << "-S" << packageList << (packageList + "-headers");
     QVariantMap args;
     args["arguments"] = arguments;
     KAuth::Action installAction( QLatin1String( "org.namib.msm.kernel.install" ) );
