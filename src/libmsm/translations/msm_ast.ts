@@ -194,7 +194,7 @@ Aconséyase habilitar esos grupos. ¿De xuru quies siguir?</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
+        <source>Add and remove Namib kernels</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -573,7 +573,7 @@ Aconséyase habilitar esos grupos. ¿De xuru quies siguir?</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
+        <source>Namib Hardware Detection graphical user interface</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -644,8 +644,8 @@ Aconséyase habilitar esos grupos. ¿De xuru quies siguir?</translation>
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Xestor d&apos;axustes de Manjaro</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Xestor d&apos;axustes de Namib</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -675,8 +675,8 @@ Aconséyase habilitar esos grupos. ¿De xuru quies siguir?</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
-        <translation>Axustes de Manjaro</translation>
+        <source>Namib Settings</source>
+        <translation>Axustes de Namib</translation>
     </message>
 </context>
 <context>
@@ -714,8 +714,8 @@ Aconséyase habilitar esos grupos. ¿De xuru quies siguir?</translation>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Xestor d&apos;axustes de Manjaro</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Xestor d&apos;axustes de Namib</translation>
     </message>
     <message numerus="yes">
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>

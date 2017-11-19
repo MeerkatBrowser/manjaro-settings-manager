@@ -5,12 +5,12 @@ Exec=kcmshell5 msm_keyboard
 
 X-KDE-Library=msm_keyboard
 X-KDE-ServiceTypes=KCModule
-X-KDE-System-Settings-Parent-Category=manjaro
+X-KDE-System-Settings-Parent-Category=namib
 X-KDE-ParentApp=kcontrol
 X-KDE-PluginKeyword=msm_keyboard
 X-KDE-Keywords=keyboard
 X-KDE-Keywords[x-test]=xxkeyboardxx
-Categories=Qt;KDE;X-KDE-settings-system;manjaro
+Categories=Qt;KDE;X-KDE-settings-system;namib
 
 Name=Keyboard Settings
 Name[ast]=Axustes de tecláu

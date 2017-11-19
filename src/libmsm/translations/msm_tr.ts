@@ -194,8 +194,8 @@ Grupları etkinleştirmek için bu önerilir. Devam etmek istiyormusunuz?</trans
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation>Manjaro için linux çekirdeği ekle ve kaldır</translation>
+        <source>Add and remove Namib kernels</source>
+        <translation>Namib için linux çekirdeği ekle ve kaldır</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,8 +573,8 @@ Grupları etkinleştirmek için bu önerilir. Devam etmek istiyormusunuz?</trans
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
-        <translation>MHWD - Manjaro Donanım Yapılandırma grafik arayüzü</translation>
+        <source>Namib Hardware Detection graphical user interface</source>
+        <translation>MHWD - Namib Donanım Yapılandırma grafik arayüzü</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="83"/>
@@ -644,8 +644,8 @@ Grupları etkinleştirmek için bu önerilir. Devam etmek istiyormusunuz?</trans
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro Ayar Yönetimi</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Namib Ayar Yönetimi</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -675,8 +675,8 @@ Grupları etkinleştirmek için bu önerilir. Devam etmek istiyormusunuz?</trans
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
-        <translation>Manjaro Ayarları</translation>
+        <source>Namib Settings</source>
+        <translation>Namib Ayarları</translation>
     </message>
 </context>
 <context>
@@ -714,8 +714,8 @@ Grupları etkinleştirmek için bu önerilir. Devam etmek istiyormusunuz?</trans
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro Ayar Yönetimi</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Namib Ayar Yönetimi</translation>
     </message>
     <message numerus="yes">
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>

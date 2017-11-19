@@ -1,6 +1,6 @@
 /*
- *  mhwd - Manjaro Hardware Detection
- *  Roland Singer <roland@manjaro.org>
+ *  mhwd - Namib Hardware Detection
+ *  Roland Singer <roland@namib.org>
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

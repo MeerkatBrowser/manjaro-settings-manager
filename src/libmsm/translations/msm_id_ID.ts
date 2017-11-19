@@ -195,7 +195,7 @@ Anda yakin ingin melanjutkan?</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
+        <source>Add and remove Namib kernels</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -574,7 +574,7 @@ Anda yakin ingin melanjutkan?</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
+        <source>Namib Hardware Detection graphical user interface</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -645,7 +645,7 @@ Anda yakin ingin melanjutkan?</translation>
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -676,7 +676,7 @@ Anda yakin ingin melanjutkan?</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
+        <source>Namib Settings</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -715,7 +715,7 @@ Anda yakin ingin melanjutkan?</translation>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">

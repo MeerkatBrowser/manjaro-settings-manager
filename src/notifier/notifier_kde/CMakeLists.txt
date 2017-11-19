@@ -6,7 +6,7 @@ file(GLOB NOTIFIER_KDE_GLOB
      msm_kde_notifier.desktop
      msm_kde_notifier_settings.desktop
      icons/language.png
-     icons/tux-manjaro.png)
+     icons/tux-namib.png)
 
 set(NOTIFIER_KDE_SRCS
     ${NOTIFIER_KDE_GLOB}

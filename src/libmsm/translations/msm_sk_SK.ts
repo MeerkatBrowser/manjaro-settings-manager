@@ -194,8 +194,8 @@ Odporúča sa povoliť tieto skupiny. Naozaj chcete pokračovať?</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation>Pridanie a odstránenie jadier systému Manjaro</translation>
+        <source>Add and remove Namib kernels</source>
+        <translation>Pridanie a odstránenie jadier systému Namib</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,8 +573,8 @@ Odporúča sa povoliť tieto skupiny. Naozaj chcete pokračovať?</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
-        <translation>Grafické rozhranie pre rozpoznanie hardvéru systému Manjaro</translation>
+        <source>Namib Hardware Detection graphical user interface</source>
+        <translation>Grafické rozhranie pre rozpoznanie hardvéru systému Namib</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="83"/>
@@ -644,8 +644,8 @@ Odporúča sa povoliť tieto skupiny. Naozaj chcete pokračovať?</translation>
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Správca nastavení systému Manjaro</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Správca nastavení systému Namib</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -675,8 +675,8 @@ Odporúča sa povoliť tieto skupiny. Naozaj chcete pokračovať?</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
-        <translation>Nastavenia systému Manjaro</translation>
+        <source>Namib Settings</source>
+        <translation>Nastavenia systému Namib</translation>
     </message>
 </context>
 <context>
@@ -714,8 +714,8 @@ Odporúča sa povoliť tieto skupiny. Naozaj chcete pokračovať?</translation>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Správca nastavení systému Manjaro</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Správca nastavení systému Namib</translation>
     </message>
     <message numerus="yes">
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>

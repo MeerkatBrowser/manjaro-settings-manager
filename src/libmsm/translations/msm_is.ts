@@ -194,8 +194,8 @@ Mælt er með því að þessir hópar séu virkjaðir. Ertu viss um að þú vi
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation>Bæta við og fjarlægja manjaro kjarna</translation>
+        <source>Add and remove Namib kernels</source>
+        <translation>Bæta við og fjarlægja namib kjarna</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,8 +573,8 @@ Mælt er með því að þessir hópar séu virkjaðir. Ertu viss um að þú vi
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
-        <translation>Manjaro vélbúnaðar greining með grafísku notendaviðmóti</translation>
+        <source>Namib Hardware Detection graphical user interface</source>
+        <translation>Namib vélbúnaðar greining með grafísku notendaviðmóti</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="83"/>
@@ -644,8 +644,8 @@ Mælt er með því að þessir hópar séu virkjaðir. Ertu viss um að þú vi
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro stillingastjórnun</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Namib stillingastjórnun</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -675,8 +675,8 @@ Mælt er með því að þessir hópar séu virkjaðir. Ertu viss um að þú vi
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
-        <translation>Manjaro stillingar</translation>
+        <source>Namib Settings</source>
+        <translation>Namib stillingar</translation>
     </message>
 </context>
 <context>
@@ -714,8 +714,8 @@ Mælt er með því að þessir hópar séu virkjaðir. Ertu viss um að þú vi
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro stillingastjórnun</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Namib stillingastjórnun</translation>
     </message>
     <message numerus="yes">
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>

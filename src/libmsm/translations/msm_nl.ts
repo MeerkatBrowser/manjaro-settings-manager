@@ -194,8 +194,8 @@ Het is aangeraden deze groepen te activeren. Wil je echt verder gaan?</translati
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation>Voeg toe en verwijder manjaro kernels</translation>
+        <source>Add and remove Namib kernels</source>
+        <translation>Voeg toe en verwijder Namib kernels</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,7 +573,7 @@ Het is aangeraden deze groepen te activeren. Wil je echt verder gaan?</translati
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
+        <source>Namib Hardware Detection graphical user interface</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -644,7 +644,7 @@ Het is aangeraden deze groepen te activeren. Wil je echt verder gaan?</translati
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -675,7 +675,7 @@ Het is aangeraden deze groepen te activeren. Wil je echt verder gaan?</translati
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
+        <source>Namib Settings</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -714,7 +714,7 @@ Het is aangeraden deze groepen te activeren. Wil je echt verder gaan?</translati
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">

@@ -1,6 +1,6 @@
 /*
- *  Manjaro Settings Manager
- *  Ramon Buldó <ramon@manjaro.org>
+ *  Namib Settings Manager
+ *  Ramon Buldó <ramon@namib.org>
  *
  *  Copyright (C) 2007 Free Software Foundation, Inc.
  *

@@ -3,7 +3,7 @@ cmake_policy(SET CMP0063 NEW)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 file(GLOB MSM_GLOB
-     manjaro-settings-manager.desktop)
+     namib-settings-manager.desktop)
 
 set(MSM_SRCS
     ${MSM_GLOB}
@@ -24,7 +24,7 @@ SET_TARGET_PROPERTIES(msm_bin
     PROPERTIES
     AUTOMOC TRUE
     ENABLE_EXPORTS TRUE
-    RUNTIME_OUTPUT_NAME manjaro-settings-manager)
+    RUNTIME_OUTPUT_NAME namib-settings-manager)
 target_link_libraries(msm_bin
     msm_page_kernel
     msm_page_keyboard
@@ -40,5 +40,5 @@ target_link_libraries(msm_bin
 install(TARGETS msm_bin
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(FILES
-    manjaro-settings-manager.desktop
+    namib-settings-manager.desktop
     DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)

@@ -194,8 +194,8 @@ Preporuča se omogućiti te grupe. Želite li nastaviti?</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation>Dodaj i ukloni manjaro jezgre</translation>
+        <source>Add and remove Namib kernels</source>
+        <translation>Dodaj i ukloni namib jezgre</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,8 +573,8 @@ Preporuča se omogućiti te grupe. Želite li nastaviti?</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
-        <translation>Grafičko korisničko sučelje za Manjaro Hardware Detection</translation>
+        <source>Namib Hardware Detection graphical user interface</source>
+        <translation>Grafičko korisničko sučelje za Namib Hardware Detection</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="83"/>
@@ -644,8 +644,8 @@ Preporuča se omogućiti te grupe. Želite li nastaviti?</translation>
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro upravitelj postavki</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Namib upravitelj postavki</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -675,8 +675,8 @@ Preporuča se omogućiti te grupe. Želite li nastaviti?</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
-        <translation>Manjaro postavke</translation>
+        <source>Namib Settings</source>
+        <translation>Namib postavke</translation>
     </message>
 </context>
 <context>
@@ -714,8 +714,8 @@ Preporuča se omogućiti te grupe. Želite li nastaviti?</translation>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro upravitelj postavki</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Namib upravitelj postavki</translation>
     </message>
     <message numerus="yes">
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>

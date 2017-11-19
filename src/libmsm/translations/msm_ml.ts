@@ -192,7 +192,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
+        <source>Add and remove Namib kernels</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -571,7 +571,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
+        <source>Namib Hardware Detection graphical user interface</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -642,7 +642,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -673,7 +673,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
+        <source>Namib Settings</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -712,7 +712,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">

@@ -10,7 +10,7 @@
         <file>resources/gpudriver.png</file>
         <file>resources/quit.png</file>
         <file>resources/settings.png</file>
-        <file>resources/tux-manjaro.png</file>
+        <file>resources/tux-namib.png</file>
         <file>resources/timedate.png</file>
         <file>resources/users.png</file>
     </qresource>

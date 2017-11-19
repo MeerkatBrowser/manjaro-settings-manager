@@ -1,10 +1,10 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=namib-settings-manager
+Name[x-test]=xxnamib-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/manjaro/manjaro-settings-manager
+URL=https://github.com/namib/namib-settings-manager
 
-[org.manjaro.msm.keyboard.save]
+[org.namib.msm.keyboard.save]
 Name=Save Keyboard Settings
 Description=Save Keyboard Settings
 Policy=auth_admin

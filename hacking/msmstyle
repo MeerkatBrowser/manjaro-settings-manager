@@ -1,5 +1,5 @@
 #!/bin/sh
-# Calls astyle with settings matching Manjaro Settings Manager coding style
+# Calls astyle with settings matching Namib Settings Manager coding style
 # Requires astyle >= 2.04
 set -e
 

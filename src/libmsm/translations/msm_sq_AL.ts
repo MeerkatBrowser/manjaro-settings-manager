@@ -246,7 +246,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
+        <source>Add and remove Namib kernels</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -642,7 +642,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
+        <source>Namib Hardware Detection graphical user interface</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -729,7 +729,7 @@ Would you like to continue?</source>
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="20"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -760,7 +760,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="154"/>
-        <source>Manjaro Settings</source>
+        <source>Namib Settings</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -799,7 +799,7 @@ Would you like to continue?</source>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">

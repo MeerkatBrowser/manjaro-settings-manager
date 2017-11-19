@@ -1,4 +1,4 @@
-project(manjaro-settings-manager)
+project(namib-settings-manager)
 SET(PROJECT_VERSION "0.5.3")
 
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)

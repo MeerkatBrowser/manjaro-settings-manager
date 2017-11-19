@@ -1,34 +1,34 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=namib-settings-manager
+Name[x-test]=xxnamib-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/manjaro/manjaro-settings-manager
+URL=https://github.com/namib/namib-settings-manager
 
-[org.manjaro.msm.users.add]
+[org.namib.msm.users.add]
 Name=Add User
 Description=Add User
 Policy=auth_admin
 Persistence=session
 
-[org.manjaro.msm.users.remove]
+[org.namib.msm.users.remove]
 Name=Remove User
 Description=Remove User
 Policy=auth_admin
 Persistence=session
 
-[org.manjaro.msm.users.changepassword]
+[org.namib.msm.users.changepassword]
 Name=Change Password
 Description=Change Password
 Policy=auth_admin
 Persistence=session
 
-[org.manjaro.msm.users.changeaccounttype]
+[org.namib.msm.users.changeaccounttype]
 Name=Change Account Type
 Description=Change Account Type
 Policy=auth_admin
 Persistence=session
 
-[org.manjaro.msm.users.changeimage]
+[org.namib.msm.users.changeimage]
 Name=Change Image
 Description=Change Image
 Policy=auth_admin

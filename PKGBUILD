@@ -1,5 +1,5 @@
 # This is for local testing and only works if used in the root of the cloned repo (with makepkg)
-# Maintainer : Ramon Buldo <ramon@manjaro.org>
+# Maintainer : Ramon Buldo <ramon@namib.org>
 
 pkgname=kcm-nsm
 pkgver=0.4.95
@@ -12,8 +12,8 @@ depends=('icu' 'qt5-base' 'hwinfo' 'kitemmodels' 'kauth'
          'kconfigwidgets' 'kcoreaddons' 'kcmutils' 'ckbcomp'
          'knotifications' 'xdg-utils')
 makedepends=('git' 'extra-cmake-modules' 'kdoctools' 'qt5-tools')
-conflicts=('manjaro-settings-manager' 'manjaro-settings-manager-kcm' 'manjaro-settings-manager-knotifier' 'manjaro-settings-manager-notifier')
-provides=("manjaro-settings-manager" 'manjaro-settings-manager-kcm' 'manjaro-settings-manager-knotifier' 'manjaro-settings-manager-notifier')
+conflicts=('namib-settings-manager' 'namib-settings-manager-kcm' 'namib-settings-manager-knotifier' 'namib-settings-manager-notifier')
+provides=("namib-settings-manager" 'namib-settings-manager-kcm' 'namib-settings-manager-knotifier' 'namib-settings-manager-notifier')
 
 build() {
   cd ..

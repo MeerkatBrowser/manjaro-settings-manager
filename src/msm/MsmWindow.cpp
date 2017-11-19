@@ -1,21 +1,21 @@
 /*
- *  This file is part of Manjaro Settings Manager.
+ *  This file is part of Namib Settings Manager.
  *
- *  Roland Singer <roland@manjaro.org>
- *  Ramon Buldó <ramon@manjaro.org>
+ *  Roland Singer <roland@namib.org>
+ *  Ramon Buldó <ramon@namib.org>
  *
- *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
+ *  Namib Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
  *
- *  Manjaro Settings Manager is distributed in the hope that it will be useful,
+ *  Namib Settings Manager is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Manjaro Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with Namib Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "MsmWindow.h"
@@ -151,7 +151,7 @@ MsmWindow::buttonShowAllSettings_clicked()
     ui->listWidget->clearSelection();
 
     // Setup icon and titel
-    ui->labelHeader->setText( tr( "Manjaro Settings" ) );
+    ui->labelHeader->setText( tr( "Namib Settings" ) );
     ui->labelIcon->setPixmap( QPixmap( ":/images/resources/settings.png" ) );
 
     // Hide buttons
@@ -194,7 +194,7 @@ MsmWindow::closePageRequested( PageWidget* page )
 void
 MsmWindow::writePositionSettings()
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager" );
+    QSettings settings( "namib", "namib-settings-manager" );
 
     settings.beginGroup( "mainwindow" );
 
@@ -214,7 +214,7 @@ MsmWindow::writePositionSettings()
 void
 MsmWindow::readPositionSettings()
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager" );
+    QSettings settings( "namib", "namib-settings-manager" );
 
     settings.beginGroup( "mainwindow" );
 

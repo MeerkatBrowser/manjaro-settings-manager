@@ -194,8 +194,8 @@ Det anbefales å aktivere disse gruppene. Ønsker du virkelig å fortsette?</tra
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation>Legg til og fjern Manjaros kjerner</translation>
+        <source>Add and remove Namib kernels</source>
+        <translation>Legg til og fjern Namibs kjerner</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -573,8 +573,8 @@ Det anbefales å aktivere disse gruppene. Ønsker du virkelig å fortsette?</tra
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="46"/>
-        <source>Manjaro Hardware Detection graphical user interface</source>
-        <translation>Grensesnitt for Manjaro Hardware Detection</translation>
+        <source>Namib Hardware Detection graphical user interface</source>
+        <translation>Grensesnitt for Namib Hardware Detection</translation>
     </message>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="83"/>
@@ -644,8 +644,8 @@ Det anbefales å aktivere disse gruppene. Ønsker du virkelig å fortsette?</tra
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro Innstillinger</translation>
+        <source>Namib Settings Manager</source>
+        <translation>Namib Innstillinger</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -675,8 +675,8 @@ Det anbefales å aktivere disse gruppene. Ønsker du virkelig å fortsette?</tra
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
-        <translation>Manjaro Innstillinger</translation>
+        <source>Namib Settings</source>
+        <translation>Namib Innstillinger</translation>
     </message>
 </context>
 <context>
@@ -714,7 +714,7 @@ Det anbefales å aktivere disse gruppene. Ønsker du virkelig å fortsette?</tra
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
+        <source>Namib Settings Manager</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">

@@ -1,15 +1,15 @@
-# Manjaro Settings Manager
+# Namib Settings Manager
 
-The Manjaro Settings Manager offers you a series of settings, which are
-either enabled by Manjaro (i.e. installation of multiple kernels) or are 
+The Namib Settings Manager offers you a series of settings, which are
+either enabled by Namib (i.e. installation of multiple kernels) or are 
 missing from at least some of popular Desktop Environments and Window Managers.
 
-Currently has modules written for Manjaro Hardware Detection (MHWD), Language,
+Currently has modules written for Namib Hardware Detection (MHWD), Language,
 Kernel, Keyboard, Time and Date and User Accounts.
 
 It also includes a daemon to notify user of new language packages or kernels.
 
-Manjaro Settings Manager is under active development.
+Namib Settings Manager is under active development.
 
 
 ### BUILD INSTRUCTIONS
@@ -53,8 +53,8 @@ It will also show up the new kcm modules in kde's systemsettings or issuing the 
 
 ### RESOURCES
 
-* Website        https://manjaro.org/
-* Wiki           https://wiki.manjaro.org/
-* Mailing List   https://lists.manjaro.org/mailman/listinfo
-* Download       https://manjaro.org/get-manjaro/
-* IRC            #manjaro (www.freenode.com)
+* Website        https://namib.org/
+* Wiki           https://wiki.namib.org/
+* Mailing List   https://lists.namib.org/mailman/listinfo
+* Download       https://namib.org/get-namib/
+* IRC            #namib (www.freenode.com)

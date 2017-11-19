@@ -1,16 +1,16 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=namib-settings-manager
+Name[x-test]=xxnamib-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/manjaro/manjaro-settings-manager
+URL=https://github.com/namib/namib-settings-manager
 
-[org.manjaro.msm.kernel.install]
+[org.namib.msm.kernel.install]
 Name=Install Kernel
 Description=Install Kernel
 Policy=auth_admin
 Persistence=session
 
-[org.manjaro.msm.kernel.remove]
+[org.namib.msm.kernel.remove]
 Name=Remove Kernel
 Description=Remove Kernel
 Policy=auth_admin

@@ -6,7 +6,7 @@ file(GLOB NOTIFIER_GLOB
      msm_notifier.desktop
      msm_notifier_settings.desktop
      icons/language.png
-     icons/tux-manjaro.png)
+     icons/tux-namib.png)
 
 set(NOTIFIER_SRCS
     ${NOTIFIER_GLOB}

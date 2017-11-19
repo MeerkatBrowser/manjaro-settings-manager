@@ -3,4 +3,4 @@ add_subdirectory(modules)
 add_subdirectory(msm)
 add_subdirectory(notifier)
 
-install(FILES manjaro-category.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(FILES namib-category.desktop DESTINATION ${SERVICES_INSTALL_DIR})

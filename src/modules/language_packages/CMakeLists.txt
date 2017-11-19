@@ -46,5 +46,5 @@ target_link_libraries(msm_language_packages_authhelper
     KF5::Auth)
 
 install(TARGETS msm_language_packages_authhelper DESTINATION ${KAUTH_HELPER_INSTALL_DIR})
-kauth_install_helper_files(msm_language_packages_authhelper org.manjaro.msm.languagepackages root)
-kauth_install_actions(org.manjaro.msm.languagepackages msm_language_packages.actions)
+kauth_install_helper_files(msm_language_packages_authhelper org.namib.msm.languagepackages root)
+kauth_install_actions(org.namib.msm.languagepackages msm_language_packages.actions)
