@@ -72,7 +72,7 @@ KernelCommon::installKernel( const QModelIndex& index )
     QString kernel = qvariant_cast<QString>( index.data( KernelModel::PackageRole ) );
     QString version = qvariant_cast<QString>( index.data( KernelModel::VersionRole ) );
     QStringList packageList;
-    packageList << kernel << modules;
+    packageList << kernel << modules << (kernel << modules << "-headers");
 
     QString title = QString( tr( "Install Linux %1" ) ).arg( version );
     QString message = QString( tr( "New Kernel package(s) is/are ready to install. \nWould you like to continue?" ) );
@@ -85,7 +85,7 @@ KernelCommon::installKernel( const QModelIndex& index )
     }
 
     QStringList arguments;
-    arguments << "--noconfirm" << "--noprogressbar" << "-S" << packageList << (packageList << "-headers");
+    arguments << "--noconfirm" << "--noprogressbar" << "-S" << packageList;
     QVariantMap args;
     args["arguments"] = arguments;
     KAuth::Action installAction( QLatin1String( "org.namib.msm.kernel.install" ) );
