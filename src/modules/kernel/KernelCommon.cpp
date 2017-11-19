@@ -71,8 +71,11 @@ KernelCommon::installKernel( const QModelIndex& index )
     QStringList modules = qvariant_cast<QStringList>( index.data( KernelModel::InstalledModulesRole ) );
     QString kernel = qvariant_cast<QString>( index.data( KernelModel::PackageRole ) );
     QString version = qvariant_cast<QString>( index.data( KernelModel::VersionRole ) );
+    QStringList packageListHeaders;
+    packageListHeaders << kernel + "-headers";
     QStringList packageList;
-    packageList << kernel << modules << (kernel << modules << "-headers");
+    packageList << kernel << modules << packageListHeaders;
+
 
     QString title = QString( tr( "Install Linux %1" ) ).arg( version );
     QString message = QString( tr( "New Kernel package(s) is/are ready to install. \nWould you like to continue?" ) );
@@ -83,6 +86,8 @@ KernelCommon::installKernel( const QModelIndex& index )
         information.append( p );
         information.append( "\n" );
     }
+
+
 
     QStringList arguments;
     arguments << "--noconfirm" << "--noprogressbar" << "-S" << packageList;
