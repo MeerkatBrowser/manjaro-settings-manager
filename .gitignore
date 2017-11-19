@@ -2,11 +2,11 @@
 *.pro.user
 build
 build-debug
-build-manjaro-settings-manager-Desktop-Default
-build-manjaro-settings-manager-Desktop
-build-manjaro-settings-manager-Qt4_Desktop
-build-manjaro-settings-manager-Desktop-Debug
-build-manjaro-settings-manager-Qt4_Desktop-Debug
+build-namib-settings-manager-Desktop-Default
+build-namib-settings-manager-Desktop
+build-namib-settings-manager-Qt4_Desktop
+build-namib-settings-manager-Desktop-Debug
+build-namib-settings-manager-Qt4_Desktop-Debug
 *.qm
 .directory
 pkg
@@ -15,4 +15,4 @@ CMakeLists.txt.user
 .vscode/*
 .kdev4/*
 .directory
-manjaro-settings-manager.kdev4
+namib-settings-manager.kdev4
