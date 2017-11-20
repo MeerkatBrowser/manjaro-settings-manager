@@ -94,7 +94,7 @@ KernelCommon::installKernel( const QModelIndex& index )
     QVariantMap args;
     args["arguments"] = arguments;
     KAuth::Action installAction( QLatin1String( "org.namib.msm.kernel.install" ) );
-    installAction.setHelperId( QLatin1String( "org.namibw.msm.kernel" ) );
+    installAction.setHelperId( QLatin1String( "org.namib.msm.kernel" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -113,8 +113,10 @@ KernelCommon::removeKernel( const QModelIndex& index )
     QStringList modules = qvariant_cast<QStringList>( index.data( KernelModel::InstalledModulesRole ) );
     QString kernel = qvariant_cast<QString>( index.data( KernelModel::PackageRole ) );
     QString version = qvariant_cast<QString>( index.data( KernelModel::VersionRole ) );
+    QStringList packageListHeaders;
+    packageListHeaders << kernel + "-headers";
     QStringList packageList;
-    packageList << kernel << modules;
+    packageList << kernel << modules << packageListHeaders;
 
     QString title = QString( tr( "Remove Linux %1" ) ).arg( version );
     QString message = QString( tr( "The Linux %1 packages will be removed. \nWould you like to continue?" ) ).arg( version );
