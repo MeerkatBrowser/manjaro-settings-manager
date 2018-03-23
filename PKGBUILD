@@ -1,5 +1,5 @@
 # This is for local testing and only works if used in the root of the cloned repo (with makepkg)
-# Maintainer : Ramon Buldo <ramon@namib.org>
+# Maintainer : Ramon Buldo <ramon@manjaro.org>
 
 pkgname=kcm-nsm
 pkgver=0.4.95

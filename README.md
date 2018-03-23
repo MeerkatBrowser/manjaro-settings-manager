@@ -53,8 +53,8 @@ It will also show up the new kcm modules in kde's systemsettings or issuing the 
 
 ### RESOURCES
 
-* Website        https://namib.org/
-* Wiki           https://wiki.namib.org/
-* Mailing List   https://lists.namib.org/mailman/listinfo
-* Download       https://namib.org/get-namib/
+* Website        https://manjaro.org/
+* Wiki           https://wiki.manjaro.org/
+* Mailing List   https://lists.manjaro.org/mailman/listinfo
+* Download       https://manjaro.org/get-namib/
 * IRC            #namib (www.freenode.com)

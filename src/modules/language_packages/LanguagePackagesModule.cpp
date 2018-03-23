@@ -1,8 +1,8 @@
 /*
  *  This file is part of Namib Settings Manager.
  *
- *  Roland Singer <roland@namib.org>
- *  Ramon Buldó <ramon@namib.org>
+ *  Roland Singer <roland@manjaro.org>
+ *  Ramon Buldó <ramon@manjaro.org>
  *
  *  Namib Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -51,7 +51,7 @@ LanguagePackagesModule::LanguagePackagesModule( QWidget* parent, const QVariantL
     aboutData->addAuthor( "Ramon Buldó",
                           QStringLiteral( "rbuldo@gmail.com" ) );
     aboutData->addAuthor( "Roland Singer",
-                          QStringLiteral( "roland@namib.org" ) );
+                          QStringLiteral( "roland@manjaro.org" ) );
     aboutData->setCustomAuthorText( QString(), MsmCommon::getBugReportLink() );
     setAboutData( aboutData );
     setButtons( KCModule::NoAdditionalButton );

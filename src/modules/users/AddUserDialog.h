@@ -1,7 +1,7 @@
 /*
  *  This file is part of Namib Settings Manager.
  *
- *  Roland Singer <roland@namib.org>
+ *  Roland Singer <roland@manjaro.org>
  *
  *  Namib Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

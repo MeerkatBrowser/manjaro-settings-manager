@@ -3,7 +3,7 @@
  *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
  *
  *   Originally from the Namib Installation Framework
- *   by Roland Singer <roland@namib.org>
+ *   by Roland Singer <roland@manjaro.org>
  *   Copyright (C) 2007 Free Software Foundation, Inc.
  *
  *   Calamares is free software: you can redistribute it and/or modify

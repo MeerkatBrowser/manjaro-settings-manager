@@ -1,7 +1,7 @@
 /*
  *  This file is part of Namib Settings Manager.
  *
- *  Ramon Buldó <ramon@namib.org>
+ *  Ramon Buldó <ramon@manjaro.org>
  *
  *  Namib Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -47,7 +47,7 @@ PageKernel::PageKernel( QWidget* parent, const QVariantList& args ) :
                                             KAboutLicense::LicenseKey::GPL_V3,
                                             "(c) 2014 - 2017 Namib Settings Manager developers" );
     aboutData->addAuthor( "Ramon Buldó",
-                          QStringLiteral( "ramon@namib.org" ) );
+                          QStringLiteral( "ramon@manjaro.org" ) );
     aboutData->setCustomAuthorText( QString(), MsmCommon::getBugReportLink() );
     setAboutData( aboutData );
     setButtons( KCModule::NoAdditionalButton );

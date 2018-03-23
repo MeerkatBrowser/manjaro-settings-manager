@@ -1,7 +1,7 @@
 /*
  *  This file is part of Namib Settings Manager.
  *
- *  Ramon Buldó <ramon@namib.org>
+ *  Ramon Buldó <ramon@manjaro.org>
  *
  *  Namib Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -24,5 +24,5 @@ QString
 MsmCommon::getBugReportLink()
 {
     return QString( tr( "Please use <a href='%1'>%1</a> to report bugs." )
-                    .arg( "https://bugs.namib.org/" ) );
+                    .arg( "https://bugs.manjaro.org/" ) );
 }
