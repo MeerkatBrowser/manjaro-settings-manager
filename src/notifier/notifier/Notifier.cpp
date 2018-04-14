@@ -1,20 +1,20 @@
 /*
- *  This file is part of Namib Settings Manager.
+ *  This file is part of Manjaro Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
  *
- *  Namib Settings Manager is free software: you can redistribute it and/or modify
+ *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
  *
- *  Namib Settings Manager is distributed in the hope that it will be useful,
+ *  Manjaro Settings Manager is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Namib Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with Manjaro Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "LanguageCommon.h"
@@ -39,11 +39,11 @@ Notifier::Notifier( QObject* parent ) :
 
 
     m_tray = new QSystemTrayIcon( this );
-    m_tray->setIcon( QIcon::fromTheme( "namib-settings-manager" ) );
+    m_tray->setIcon( QIcon::fromTheme( "manjaro-settings-manager" ) );
 
     QMenu* menu = new QMenu();
     m_tray->setContextMenu( menu );
-    QAction* msmKernel = new QAction( QIcon( ":/icons/tux-namib.png" ),
+    QAction* msmKernel = new QAction( QIcon( ":/icons/tux-manjaro.png" ),
                                       QString( tr ( "Kernels" ) ),
                                       menu );
     QAction* msmLanguagePackages = new QAction(
@@ -67,12 +67,12 @@ Notifier::Notifier( QObject* parent ) :
 
     connect( msmKernel, &QAction::triggered, this, [msmKernel, this]()
     {
-        QProcess::startDetached( "namib-settings-manager", QStringList() << "-m" << "msm_kernel" );
+        QProcess::startDetached( "manjaro-settings-manager", QStringList() << "-m" << "msm_kernel" );
         m_tray->hide();
     } );
     connect( msmLanguagePackages, &QAction::triggered, this, [msmLanguagePackages, this]()
     {
-        QProcess::startDetached( "namib-settings-manager", QStringList() << "-m" << "msm_language_packages" );
+        QProcess::startDetached( "manjaro-settings-manager", QStringList() << "-m" << "msm_language_packages" );
         m_tray->hide();
     } );
 
@@ -188,7 +188,7 @@ Notifier::cLanguagePackage()
     {
         qDebug() << "Missing language packages found, notifying user...";
         m_tray->show();
-        m_tray->showMessage( tr( "Namib Settings Manager" ),
+        m_tray->showMessage( tr( "Manjaro Settings Manager" ),
                              QString( tr( "%n new additional language package(s) available", "", packageNumber ) ),
                              QSystemTrayIcon::Information,
                              10000 );
@@ -227,7 +227,7 @@ Notifier::cKernel()
         if ( foundRunning )
         {
             m_tray->show();
-            m_tray->showMessage( QString( tr( "Namib Settings Manager" ) ),
+            m_tray->showMessage( QString( tr( "Manjaro Settings Manager" ) ),
                                  QString( tr( "Running an unsupported kernel, please update." ) ),
                                  QSystemTrayIcon::Warning,
                                  10000 );
@@ -235,7 +235,7 @@ Notifier::cKernel()
         else if ( found )
         {
             m_tray->show();
-            m_tray->showMessage( QString( tr( "Namib Settings Manager" ) ),
+            m_tray->showMessage( QString( tr( "Manjaro Settings Manager" ) ),
                                  QString( tr( "Unsupported kernel installed in your system, please remove it." ) ),
                                  QSystemTrayIcon::Information,
                                  10000 );
@@ -288,7 +288,7 @@ Notifier::cKernel()
 void Notifier::showNewKernelNotification()
 {
     m_tray->show();
-    m_tray->showMessage( QString( tr( "Namib Settings Manager" ) ),
+    m_tray->showMessage( QString( tr( "Manjaro Settings Manager" ) ),
                          QString( tr( "Newer kernel is available, please update." ) ),
                          QSystemTrayIcon::Information,
                          10000 );
@@ -298,7 +298,7 @@ void Notifier::showNewKernelNotification()
 void
 Notifier::loadConfiguration()
 {
-    QSettings settings( "namib", "namib-settings-manager" );
+    QSettings settings( "manjaro", "manjaro-settings-manager" );
     m_checkLanguagePackage = settings.value( "notifications/checkLanguagePackages", true ).toBool();
     m_checkUnsupportedKernel = settings.value( "notifications/checkUnsupportedKernel", true ).toBool();
     m_checkUnsupportedKernelRunning = settings.value( "notifications/checkUnsupportedKernelRunning", true ).toBool();
@@ -312,7 +312,7 @@ Notifier::loadConfiguration()
 bool
 Notifier::isPackageIgnored( const QString package, const QString group )
 {
-    QSettings settings( "namib", "namib-settings-manager-Notifier" );
+    QSettings settings( "manjaro", "manjaro-settings-manager-Notifier" );
     settings.beginGroup( group );
     int value = settings.value( "notify_count_" + package, "0" ).toInt();
     settings.endGroup();
@@ -323,7 +323,7 @@ Notifier::isPackageIgnored( const QString package, const QString group )
 void
 Notifier::addToConfig( const QString package, const QString group )
 {
-    QSettings settings( "namib", "namib-settings-manager-Notifier" );
+    QSettings settings( "manjaro", "manjaro-settings-manager-Notifier" );
     settings.beginGroup( group );
     int value = settings.value( "notify_count_" + package, "0" ).toInt();
     ++value;
