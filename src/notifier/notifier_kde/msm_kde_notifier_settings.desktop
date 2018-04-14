@@ -1,16 +1,16 @@
 [Desktop Entry]
-Name=Namib Notifier KDE Settings
-Name[da]=Namib-notifikator KDE-indstillinger
-Name[fr]=Paramètres du Notifieur KDE Namib
-Name[pl]=Ustawienia powiadomień Namib dla KDE
-Name[sk]=Nastavenia oznámení KDE systému Namib
+Name=Manjaro Notifier KDE Settings
+Name[da]=Manjaro-notifikator KDE-indstillinger
+Name[fr]=Paramètres du Notifieur KDE Manjaro
+Name[pl]=Ustawienia powiadomień Manjaro dla KDE
+Name[sk]=Nastavenia oznámení KDE systému Manjaro
 
-Comment=Graphical Settings for Namib Notifier KDE
-Comment[da]=Grafiske indstillinger til Namib-notifikator KDE
-Comment[de]=Grafische Einstellungsverwaltung für Namib
-Comment[fr]=Gestionnaire graphique de paramètres pour Notifieur Namib
-Comment[pl]=Graficzne ustawienia powiadomień Namib dla środowiska KDE
-Comment[sk]=Grafické nastavenia oznámení prostredia KDE pre systém Namib
+Comment=Graphical Settings for Manjaro Notifier KDE
+Comment[da]=Grafiske indstillinger til Manjaro-notifikator KDE
+Comment[de]=Grafische Einstellungsverwaltung für Manjaro
+Comment[fr]=Gestionnaire graphique de paramètres pour Notifieur Manjaro
+Comment[pl]=Graficzne ustawienia powiadomień Manjaro dla środowiska KDE
+Comment[sk]=Grafické nastavenia oznámení prostredia KDE pre systém Manjaro
 
 Exec=msm_kde_notifier --settings
 Icon=preferences-desktop
