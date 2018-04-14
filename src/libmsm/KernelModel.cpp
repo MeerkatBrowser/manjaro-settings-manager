@@ -59,7 +59,7 @@ KernelModel::update()
 
     beginResetModel();
     m_kernels.clear();
-    foreach ( const QString& kernel, QStringList( allKernelPackages.keys() ).filter( QRegularExpression( "^linux([0-9][0-9]?([0-9])|[0-9][0-9]?([0-9])-rt)$" ) ) )
+    foreach ( const QString& kernel, QStringList( allKernelPackages.keys() ).filter( QRegularExpression( "^(linux|linux-lts|linux-zen|linux-hardened)$" ) ) )
     {
         Kernel newKernel;
 
@@ -211,7 +211,7 @@ KernelModel::getAvailablePackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Ss" << "^(linux|linux-lts|linux-zen|linux-hardened)-" );
+    process.start( "pacman", QStringList() << "-Ss" << "^(linux|linux-lts|linux-zen|linux-hardened)$" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAllStandardOutput();
@@ -239,7 +239,7 @@ KernelModel::getInstalledPackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Qs" << "^(linux|linux-lts|linux-zen|linux-hardened)-" );
+    process.start( "pacman", QStringList() << "-Qs" << "^(linux|linux-lts|linux-zen|linux-hardened)$" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAll();
