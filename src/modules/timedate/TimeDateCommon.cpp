@@ -2,6 +2,7 @@
  *  This file is part of Namib Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
+ *  Kacper Piwiński
  *
  *  Namib Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,13 +18,11 @@
  *  along with Namib Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 #include "TimeDateCommon.h"
 #include "TimeZoneDialog.h"
 
 #include <QtCore/QTimeZone>
 #include <QDebug>
-
 
 QString
 TimeDateCommon::getName()
@@ -79,8 +78,8 @@ TimeDateCommon::showTimeZoneSelector( QString& currentTimeZone )
     QString region = currentTimeZone.split( "/" ).value( 0 );
     QString zone = currentTimeZone.split( "/" ).value( 1 );
     dialog.init( region, zone );
-    dialog.exec();
-    if ( dialog.currentLocation() != currentTimeZone )
+
+    if ( dialog.exec() == QDialog::Accepted )
         return dialog.currentLocation();
     else
         return QString();
@@ -91,15 +90,23 @@ void
 TimeDateCommon::updateUi( Ui::PageTimeDate* ui, TimeDateService* timeDateService,
                           bool isTimeEdited, bool isDateEdited, QString currentTimeZone )
 {
+    ui->isNtpEnabledCheckBox->blockSignals( true );
     if ( timeDateService->canNtp() )
+    {
         ui->isNtpEnabledCheckBox->setChecked( timeDateService->isNtpEnabled() );
+        ui->timeEdit->setEnabled( !ui->isNtpEnabledCheckBox->isChecked() );
+        ui->dateEdit->setEnabled( !ui->isNtpEnabledCheckBox->isChecked() );
+    }
     else
     {
         ui->isNtpEnabledCheckBox->setChecked( false );
         ui->isNtpEnabledCheckBox->setEnabled( false );
     }
+    ui->isNtpEnabledCheckBox->blockSignals( false );
 
+    ui->isRtcLocalCheckBox->blockSignals( true );
     ui->isRtcLocalCheckBox->setChecked( timeDateService->isRtcInLocalTimeZone() );
+    ui->isRtcLocalCheckBox->blockSignals( false );
 
     QTimeZone timeZone = QTimeZone( currentTimeZone.toLatin1() );
     if ( timeZone.isValid() )
