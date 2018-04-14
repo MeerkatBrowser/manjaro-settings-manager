@@ -3,7 +3,7 @@
 
 pkgname=kcm-nsm
 pkgver=0.4.95
-pkgrel=1
+pkgrel=2
 pkgdesc="Namib settings manager module"
 arch=('i686' 'x86_64')
 url="https://github.com/meerkatbrowser/namib-settings-manager"
