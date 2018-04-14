@@ -1,20 +1,20 @@
 /*
- *  This file is part of Manjaro Settings Manager.
+ *  This file is part of Namib Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
  *
- *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
+ *  Namib Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
  *
- *  Manjaro Settings Manager is distributed in the hope that it will be useful,
+ *  Namib Settings Manager is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Manjaro Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with Namib Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "KernelModel.h"
@@ -51,9 +51,9 @@ KernelModel::update()
     QStringList recommendedKernels = getRecommendedKernels();
 
     QSet<QString> modulesToInstall;
-    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^linux([0-9][0-9]?([0-9])|[0-9][0-9]?([0-9])-rt)-" ) ) )
+    foreach ( const QString& module, QStringList( installedKernelPackages.keys() ).filter( QRegularExpression( "^(linux|linux-lts|linux-zen|linux-hardened)-" ) ) )
     {
-        QString aux = QString( module ).remove( QRegularExpression( "^linux([0-9][0-9]?([0-9])|[0-9][0-9]?([0-9])-rt)-" ) );
+        QString aux = QString( module ).remove( QRegularExpression( "^(linux|linux-lts|linux-zen|linux-hardened)-" ) );
         modulesToInstall.insert( aux );
     }
 
@@ -211,7 +211,7 @@ KernelModel::getAvailablePackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Ss" << "^linux([0-9][0-9]?([0-9])|[0-9][0-9]?([0-9])-rt)" );
+    process.start( "pacman", QStringList() << "-Ss" << "^(linux|linux-lts|linux-zen|linux-hardened)-" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAllStandardOutput();
@@ -239,7 +239,7 @@ KernelModel::getInstalledPackages() const
 {
     QProcess process;
     process.setEnvironment( QStringList() << "LANG=C" << "LC_MESSAGES=C" );
-    process.start( "pacman", QStringList() << "-Qs" << "^linux([0-9][0-9]?([0-9])|[0-9][0-9]?([0-9])-rt)" );
+    process.start( "pacman", QStringList() << "-Qs" << "^(linux|linux-lts|linux-zen|linux-hardened)-" );
     if ( !process.waitForFinished( 15000 ) )
         qDebug() << "error: failed to get installed kernels";
     QString result = process.readAll();
@@ -360,14 +360,14 @@ KernelModel::getRunningKernel() const
 QStringList
 KernelModel::getLtsKernels() const
 {
-    return QStringList() << "linux310" << "linux312" << "linux314" << "linux316" << "linux318" << "linux41" << "linux44" << "linux49" << "linux414" << "linux414-rt";
+    return QStringList() << "linux-lts";
 }
 
 
 QStringList
 KernelModel::getRecommendedKernels() const
 {
-    return QStringList() << "linux414";
+    return QStringList() << "linux";
 }
 
 
