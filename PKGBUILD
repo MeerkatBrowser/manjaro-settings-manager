@@ -58,7 +58,7 @@ package_namib-settings-manager-kcm() {
 
 package_namib-settings-manager-notifier() {
   pkgdesc="Namib Linux System Settings Tool (Notifier)"
-  depends=('Namib-settings-manager')
+  depends=('namib-settings-manager')
   provides=('namib-settings-manager-kde-notifier')
   conflicts=('namib-settings-manager-kde-notifier')
   cd ..
