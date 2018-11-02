@@ -3,8 +3,8 @@
 pkgbase=namib-settings-manager
 pkgname=('namib-settings-manager' 'namib-settings-manager-kcm' 
          'namib-settings-manager-notifier' 'namib-settings-manager-knotifier')
-pkgver=0.5.4
-pkgrel=14
+pkgver=0.5.5
+pkgrel=1
 pkgdesc="Namib settings manager module"
 arch=('i686' 'x86_64')
 url="https://github.com/meerkatbrowser/namib-settings-manager"
