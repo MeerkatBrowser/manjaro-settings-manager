@@ -7,7 +7,7 @@ pkgver=0.5.5
 pkgrel=1
 pkgdesc="Namib settings manager module"
 arch=('i686' 'x86_64')
-url="https://github.com/meerkatbrowser/namib-settings-manager"
+url="https://github.com/namiblinux/namib-settings-manager"
 license=("GPL")
 depends=('icu>=61.1' 'qt5-base>=5.9.1' 'hwinfo' 'kitemmodels' 'kauth' 
          'kcoreaddons' 'ckbcomp' 'xdg-utils')
@@ -16,6 +16,7 @@ optdepends=('namib-settings-manager-notifier: qt-based'
 makedepends=('extra-cmake-modules' 'kdoctools' 'qt5-tools' 'knotifications' 
              'kconfigwidgets' 'kcmutils')
 conflicts=('kcm-nsm')
+source=("git+$url.git")
 
 build() {
   cd ..
