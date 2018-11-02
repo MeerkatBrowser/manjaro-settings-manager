@@ -17,6 +17,7 @@ makedepends=('extra-cmake-modules' 'kdoctools' 'qt5-tools' 'knotifications'
              'kconfigwidgets' 'kcmutils')
 conflicts=('kcm-nsm')
 source=("git+$url.git")
+sha256sums=('SKIP')
 
 build() {
   cd ..
