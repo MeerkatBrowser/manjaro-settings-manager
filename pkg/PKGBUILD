@@ -20,7 +20,7 @@ source=("git+$url.git")
 sha256sums=('SKIP')
 
 build() {
-  cd ..
+  cd "${srcdir}/${pkgname}"
   mkdir -p build
   cd build
   cmake ../ \
