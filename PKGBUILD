@@ -31,8 +31,7 @@ build() {
 }
 
 package_namib-settings-manager() {
-  cd ..
-  cd build
+  cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install 
   rm -rf $pkgdir/usr/bin/msm_notifier
   rm -rf $pkgdir/usr/bin/msm_kde_notifier
@@ -47,8 +46,7 @@ package_namib-settings-manager-kcm() {
   pkgdesc="Namib Linux System Settings Tool (KCM for Plasma 5)"
   depends=('namib-settings-manager' 'kcmutils' 'kconfigwidgets')
   replaces=('kcm-nsm')
-  cd ..
-  cd build
+  cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc  
   rm -rf $pkgdir/usr/bin
@@ -61,8 +59,7 @@ package_namib-settings-manager-notifier() {
   depends=('namib-settings-manager')
   provides=('namib-settings-manager-kde-notifier')
   conflicts=('namib-settings-manager-kde-notifier')
-  cd ..
-  cd build
+  cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_kde_notifier.desktop
@@ -79,8 +76,7 @@ package_namib-settings-manager-knotifier() {
   depends=('namib-settings-manager' 'knotifications')
   conflicts=('namib-settings-manager-notifier')
   replaces=('namib-settings-manager-kde-notifier')
-  cd ..
-  cd build
+  cd "$srcdir/${pkgbase}-${pkgver}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_notifier.desktop
