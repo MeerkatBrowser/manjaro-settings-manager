@@ -4,7 +4,7 @@ pkgbase=namib-settings-manager
 pkgname=('namib-settings-manager' 'namib-settings-manager-kcm' 
          'namib-settings-manager-notifier' 'namib-settings-manager-knotifier')
 pkgver=0.5.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Namib settings manager module"
 arch=('i686' 'x86_64')
 url="https://github.com/namiblinux/namib-settings-manager"
