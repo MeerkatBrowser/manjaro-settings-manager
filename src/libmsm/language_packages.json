@@ -99,6 +99,26 @@
             "name": "Qt5 translations",
             "l10n_package": "qt5-translations",
             "parent_packages": ["qt5-base"]
+        },
+        {
+            "name": "Cinnamon and Nemo translations",
+            "l10n_package": "cinnamon-translations",
+            "parent_packages": ["cinnamon","nemo"]
+        },
+        {
+            "name": "BlueGriffon",
+            "l10n_package": "bluegriffon-i18n-%",
+            "parent_packages": ["bluegriffon"]
+        },
+        {
+            "name": "Firefox Developer Edition",
+            "l10n_package": "firefox-developer-edition-i18n-%",
+            "parent_packages": ["firefox-developer-edition"]
+        },
+        {
+            "name": "Palemoon",
+            "l10n_package": "palemoon-i18n-%",
+            "parent_packages": ["palemoon","palemoon-bin"]
         }
     ]
 }
